@@ -52,6 +52,15 @@ exports.createPages = async ({
     }
   `);
 
+  /*
+   * On a new site, there’s a chance the site author won’t have any content for
+   * the first run. Rather than failing or showing a blank page, we want to grab
+   * a default page that provides instructions on how to create the content.
+   *
+   * This file should have a unique name that’s unlikely to collide with the
+   * site’s files to avoid confusion with caching. We load its content and set
+   * it as the home page to give the site author a set of instructions.
+   */
   if (!result.data || !result.data.allFile) {
     reporter.warn(
       'No docs were found in the `docs` directory. Add some Markdown files to add content on your site!'

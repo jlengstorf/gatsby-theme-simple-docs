@@ -41,7 +41,10 @@ module.exports = {
     // Use Emotion for styling.
     'gatsby-plugin-emotion',
 
-    // TODO: does this actually result in the theme adding itself to the site’s Webpack config?
+    /*
+     * We need to make sure that Webpack processes this theme as ES6, so we add
+     * this plugin and specify the package name in `modules`.
+     */
     {
       resolve: 'gatsby-plugin-compile-es6-packages',
       options: {
