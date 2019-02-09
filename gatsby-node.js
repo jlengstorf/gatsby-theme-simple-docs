@@ -1,4 +1,14 @@
 const { createFilePath } = require('gatsby-source-filesystem');
+const fs = require('fs');
+
+const DOCS_DIR = 'docs';
+
+exports.onPreBootstrap = ({ reporter }) => {
+  if (!fs.existsSync(DOCS_DIR)) {
+    reporter.log(`creating the ${DOCS_DIR} directory`);
+    fs.mkdirSync(DOCS_DIR);
+  }
+};
 
 /*
  * Create a slug for each doc. This allows for the docs to be nested in folders

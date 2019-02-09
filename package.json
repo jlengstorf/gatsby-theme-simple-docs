@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-simple-docs",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A super simplified docs theme that only requires Markdown files to use.",
   "main": "index.js",
   "repository": "https://github.com/jlengstorf/gatsby-theme-simple-docs.git",
