@@ -47,7 +47,7 @@ exports.createPages = async ({
       {
         mdx(
           fileAbsolutePath: {
-            regex: "/.*/gatsby-theme-simple-docs/docs/index.md/"
+            regex: "/.*/gatsby-theme-simple-docs/docs/___no-content-default-page.md/"
           }
         ) {
           fields {
@@ -58,7 +58,7 @@ exports.createPages = async ({
     `);
 
     createPage({
-      path: backup.data.mdx.fields.slug,
+      path: '/',
       component: require.resolve('./src/templates/doc.js'),
       context: {
         slug: backup.data.mdx.fields.slug

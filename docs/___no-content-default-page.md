@@ -1,5 +1,6 @@
 ---
 title: Home
+description: This is a placeholder page.
 ---
 
 Welcome to your super-sweet docs site, powered by [`gatsby-theme-simple-docs`](https://github.com/jlengstorf/gatsby-theme-simple-docs)!
