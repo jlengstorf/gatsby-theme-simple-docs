@@ -25,7 +25,7 @@ Inside `gatsby-config.js`, set up the theme:
 
 ```js
 module.exports = {
-  __experimentalThemes: ['gatsby-theme-simple-blog']
+  __experimentalThemes: ['gatsby-theme-simple-docs']
 };
 ```
 
